@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app class="app">
+      <MainHeader />
+    <div class="appContainer">
+      <v-main>
+        <div class="d-flex justify-space-between">
+          <LeftSectionNav />
+          <SchoolPreferences />
+        </div>
+      </v-main>
+    </div>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MainHeader from "./components/MainHeader";
+import LeftSectionNav from "./components/LeftSectionNav";
+import SchoolPreferences from "./components/school-preferences/SchoolPreferences";
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    HelloWorld
-  }
-}
+    MainHeader,
+    LeftSectionNav,
+    SchoolPreferences,
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.appContainer {
+  background-color: #f5f5f5;
+  padding-left: 135px;
+  padding-right: 139px;
+  padding-bottom: 60px;
 }
 </style>
