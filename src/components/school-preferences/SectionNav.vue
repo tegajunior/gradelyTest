@@ -4,7 +4,6 @@
     <div class="navItem"><span>Subjects</span></div>
     <div class="navItem currentNavItem"><span>Users</span></div>
     <div class="navItem"><span>Account</span></div>
-  
   </div>
 </template>
 
