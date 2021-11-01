@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="app-bar">
+    <div class="app-bar d-flex align-center justify-space-between">
       <div class="d-flex align-center">
         <v-img
           alt="Gradely logo"
@@ -12,13 +12,8 @@
         />
       </div>
 
-      
-
-      <div class="d-flex justify-space-around">
+      <div class="d-lg-flex justify-space-around hidden-sm-and-down">
         <div class="mr-4 d-flex align-center currentMainNav">
-          <!-- <v-btn icon>
-            <v-icon>mdi-home-outline</v-icon>
-          </v-btn> -->
           <img :src="home" alt="">
           <span class="mainHeaderLink ml-3">Home</span>
         </div>
@@ -29,9 +24,6 @@
           <span class="mainHeaderLink">Teachers</span>
         </div>
         <div class="mr-4 d-flex align-center mainNav">
-          <!-- <v-btn icon>
-            <v-icon>mdi-school-outline</v-icon>
-          </v-btn> -->
           <img :src="students" alt="">
           <span class="mainHeaderLink ml-3">Students</span>
         </div>
@@ -44,7 +36,7 @@
       </div>
 
       
-      <div class="d-flex align-center">
+      <div class="d-lg-flex align-center hidden-sm-and-down">
         <div class="mr-5">
           <img :src="actBtn" alt="Activities button" class="far-left" />
         </div>
@@ -52,6 +44,12 @@
           <img :src="notBtn" alt="Notification button" class="far-left" />
         </div>
       </div>
+
+      <v-app-bar-nav-icon
+        @click="drawer = true"
+        class="hidden-md-and-up"
+      ></v-app-bar-nav-icon>
+
     </div>
     <hr>
   </div>
@@ -88,15 +86,13 @@ hr {
   margin-top: -6px
 }
 .app-bar {
-  padding-left: 110px;
-  padding-right: 140px;
+  padding-left: 3.8%;
+  padding-right: 3.8%;
   padding-top: 16.5px;
   padding-bottom: 4.5px;
+  width: 100%;
+  max-width: 100%;
   background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
 }
 .currentMainNav,
 .mainNav:hover {

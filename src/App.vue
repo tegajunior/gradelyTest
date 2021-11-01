@@ -3,7 +3,7 @@
       <MainHeader />
     <div class="appContainer">
       <v-main>
-        <div class="d-flex justify-space-between">
+        <div class="d-flex justify-space-between flex-column flex-md-row">
           <LeftSectionNav />
           <SchoolPreferences />
         </div>
@@ -32,10 +32,13 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
 .appContainer {
   background-color: #f5f5f5;
-  padding-left: 135px;
-  padding-right: 139px;
+  padding-left: 5.5%;
+  padding-right: 4%;
   padding-bottom: 60px;
 }
 </style>

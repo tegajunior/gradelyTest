@@ -137,4 +137,17 @@ export default {
 .moreIcon span {
   font-size: 20px;
 }
+@media (max-width: 800px) {
+  .root {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  .userBio {
+    display: none;
+  }
+  .userRole {
+    width: 100px;
+    padding-left: 10px
+  }
+}
 </style>

@@ -111,4 +111,9 @@ hr {
   font-size: 16px;
   font-weight: bold;
 }
+@media (max-width: 800px) {
+  .sectionContainer {
+    max-width: 100%;
+  }
+}
 </style>

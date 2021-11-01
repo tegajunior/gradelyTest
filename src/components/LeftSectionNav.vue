@@ -77,4 +77,13 @@ i.v-icon.v-icon {
 .currentItem i.v-icon.v-icon {
   color: #11bdcf !important;
 }
+@media (max-width: 800px) {
+  .my-account-section-header, .ml-1 {
+    font-size: 10px
+  }
+  .leftSideNav {
+    width: 200px;
+    margin-left: 0;
+  }
+}
 </style>
